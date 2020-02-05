@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Heron
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Heron.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.Heron.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Heron
+ * @package     Heron_Core
+ * @copyright   Copyright (c) Heron (https://www.Heron.com/)
+ * @license     https://www.Heron.com/LICENSE.txt
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Heron_Core::menu" title="Heron Extensions" sortOrder="50">
+                    <resource id="Heron_Core::documentation" title="Documentations" sortOrder="50">
+                        <resource id="Heron_Core::userguide" title="User Guides" sortOrder="50"/>
+                    </resource>
+                    <resource id="Heron_Core::activate" title="Active Module" sortOrder="70"/>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Heron_Core::configuration" title="Heron Information" sortOrder="10"/>
+                            <resource id="Heron_Core::marketplace" title="Heron Marketplace" sortOrder="10"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

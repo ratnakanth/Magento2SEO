@@ -1,0 +1,32 @@
+{
+  "name": "Heron/magento-2-seo-extension",
+  "description": "Magento 2 SEO extension",
+  "require": {
+    "Heron/module-core": "^1.4.5"
+  },
+  "type": "magento2-module",
+  "version": "2.2.0",
+  "license": "proprietary",
+  "keywords": [
+    "magento 2",
+    "Heron",
+    "seo",
+    "magento 2 seo"
+  ],
+  "authors": [
+    {
+      "name": "Heron",
+      "email": "support@heronuk.co.uk",
+      "homepage": "https://www.heronuk.co.uk",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Heron\\Seo\\": ""
+    }
+  }
+}

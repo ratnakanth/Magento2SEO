@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Heron
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Heron.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.Heron.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Heron
+ * @package     Heron_Core
+ * @copyright   Copyright (c) Heron (https://www.Heron.com/)
+ * @license     https://www.Heron.com/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Notification\MessageList">
+        <arguments>
+            <argument name="messages" xsi:type="array">
+                <item name="Heron_validate_message" xsi:type="string">Heron\Core\Model\Message\Validate</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Config\Model\Config\Structure\Data">
+        <plugin name="Heron_module_activate" type="Heron\Core\Model\Config\Structure\Data"/>
+    </type>
+    <type name="Magento\Backend\Model\Menu\Builder\AbstractCommand">
+        <plugin name="Heron_move_menu" type="Heron\Core\Plugin\MoveMenu"/>
+    </type>
+</config>

@@ -1,0 +1,23 @@
+{
+  "name": "Heron/module-core",
+  "description": "Heron Core for Magento 2",
+  "type": "magento2-module",
+  "version": "1.4.8",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Heron",
+      "email": "support@Heron.com",
+      "homepage": "https://www.Heron.com",
+      "role": "Technical Support"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Heron\\Core\\": ""
+    }
+  }
+}

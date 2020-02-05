@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * © Ratnakanthan
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Page\Config\Renderer">
+        <plugin name="seoRender" type="Heron\Seo\Plugin\SeoRender"/>
+    </type>
+    <type name="Magento\Review\Block\Product\ReviewRenderer">
+        <plugin name="mpseo_remove_review" type="Heron\Seo\Plugin\RemoveReview"/>
+    </type>
+</config>

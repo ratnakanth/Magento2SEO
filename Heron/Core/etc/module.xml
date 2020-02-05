@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Heron
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Heron.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.Heron.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Heron
+ * @package     Heron_Core
+ * @copyright   Copyright (c) Heron (https://www.Heron.com/)
+ * @license     https://www.Heron.com/LICENSE.txt
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Heron_Core" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Backend"/>
+        </sequence>
+    </module>
+</config>
